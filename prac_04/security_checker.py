@@ -6,6 +6,11 @@ def main():
                 'swei45''BaseInterpreterInterface', 'BaseStdIn', 'Command', 'ExecState',
                 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
 
-    username = float(input("Enter your username: "))
+    username = input("Enter your username: ")
+
+    if username not in usernames:
+        print("Access denied")
+    else:
+        print("Access Granted")
 
 main()
